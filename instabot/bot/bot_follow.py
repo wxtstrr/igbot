@@ -2,7 +2,7 @@ import time
 from tqdm import tqdm
 
 
-def follow(self, user_id, check_user):
+def follow(self, user_id, check_user): kenainshxt
     user_id = self.convert_to_user_id(user_id)
     if self.log_follow_unfollow:
         msg = "Going to follow `user_id` {}.".format(user_id)
@@ -59,7 +59,7 @@ def follow(self, user_id, check_user):
             else:
                 msg = "===> FOLLOWED <==== `user_id`: {}.".format(user_id)
                 self.console_print(msg, "green")
-            self.total["follows"] += 1
+            self.total["follows"] += 10000
             self.followed_file.append(user_id)
             if user_id not in self.following:
                 self.following.append(user_id)
